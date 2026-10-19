@@ -1,0 +1,4170 @@
+[
+  {
+    "id": "e1bdefb5",
+    "timestamp": "2026-10-19 10:24:24",
+    "timestamp_display": "19 Oct 2026 10:24",
+    "mandor_filename": "tc7_mandor_offset.pdf",
+    "kcs_filename": "tc7_kcs_offset.pdf",
+    "tanggal_laporan": "16/10/2026",
+    "afdeling": "AFDELING 1",
+    "kebun": "-",
+    "total_rows": 2,
+    "matched_count": 0,
+    "diff_count": 2,
+    "need_verification_count": 2,
+    "total_mandor": 152.0,
+    "total_kcs": 152.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 2,
+    "affected_workers_count": 2,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "16/10/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "16/10/2026",
+          "blok": "137",
+          "kode_pekerja": "BB01",
+          "data_mandor": 80.0,
+          "data_kcs": 77.0,
+          "raw_mandor": "80",
+          "raw_kcs": "77",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 80.0,
+            "kcs_val": 77.0,
+            "diff": -3.0,
+            "reason": "KCS (77) < Mandor (80). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 22.0,
+          "kcs_value": 22.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 3.3,
+          "kcs_value": 3.3,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        }
+      ],
+      "total_rows_compared": 2,
+      "status_counts": {
+        "Cocok": 0,
+        "Berbeda": 2,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 2
+      },
+      "total_mandor": 152.0,
+      "total_kcs": 152.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 2,
+      "affected_workers_count": 2,
+      "affected_blocks": [
+        "136",
+        "137"
+      ],
+      "affected_workers": [
+        "AA19",
+        "BB01"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "136",
+          "mandor_total": 72.0,
+          "kcs_total": 75.0,
+          "selisih": 3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "137",
+          "mandor_total": 80.0,
+          "kcs_total": 77.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nomor_dokumen": null,
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": 152.0
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nomor_dokumen": null,
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": 152.0
+    }
+  },
+  {
+    "id": "13e06efa",
+    "timestamp": "2026-10-19 10:11:59",
+    "timestamp_display": "19 Oct 2026 10:11",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "AFD01",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 14,
+    "matched_count": 10,
+    "diff_count": 4,
+    "need_verification_count": 4,
+    "total_mandor": 1417.0,
+    "total_kcs": 1417.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 3,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA04",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA20",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA05",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA06",
+          "data_mandor": 111.0,
+          "data_kcs": 111.0,
+          "raw_mandor": "111",
+          "raw_kcs": "111",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 111.0,
+            "kcs_val": 111.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA07",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA17",
+          "data_mandor": 72.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "72",
+          "raw_kcs": "69",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 69.0,
+            "diff": -3.0,
+            "reason": "KCS (69) < Mandor (72). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 85.0,
+          "data_kcs": 85.0,
+          "raw_mandor": "85",
+          "raw_kcs": "85",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 85.0,
+            "kcs_val": 85.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 8,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA08",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 9,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA24",
+          "data_mandor": 70.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "70",
+          "raw_kcs": "69",
+          "selisih": -1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 69.0,
+            "diff": -1.0,
+            "reason": "KCS (69) < Mandor (70). Selisih: -1. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 10,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA01",
+          "data_mandor": 153.0,
+          "data_kcs": 153.0,
+          "raw_mandor": "153",
+          "raw_kcs": "153",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 153.0,
+            "kcs_val": 153.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 11,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA10",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 12,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA13",
+          "data_mandor": 120.0,
+          "data_kcs": 121.0,
+          "raw_mandor": "120",
+          "raw_kcs": "121",
+          "selisih": 1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 120.0,
+            "kcs_val": 121.0,
+            "diff": 1.0,
+            "reason": "KCS (121) > Mandor (120). Selisih: +1. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 13,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA21",
+          "data_mandor": 162.0,
+          "data_kcs": 162.0,
+          "raw_mandor": "162",
+          "raw_kcs": "162",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 162.0,
+            "kcs_val": 162.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 14,
+          "tanggal": "10/16/2026",
+          "blok": "139B",
+          "kode_pekerja": "AA02",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 409.0,
+          "kcs_value": 409.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Berondolan Dipipil",
+          "mandor_value": 0.0,
+          "kcs_value": 0.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 54.0,
+          "kcs_value": null,
+          "selisih": null,
+          "status": "Tidak Tersedia pada Laporan KCS",
+          "keterangan": "Laporan KCS tidak mencatat luasan (bukan selisih produksi buah)."
+        }
+      ],
+      "total_rows_compared": 14,
+      "status_counts": {
+        "Cocok": 10,
+        "Berbeda": 4,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 1417.0,
+      "total_kcs": 1417.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 3,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        "136",
+        "138",
+        "139A"
+      ],
+      "affected_workers": [
+        "AA10",
+        "AA13",
+        "AA17",
+        "AA24"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "135",
+          "mandor_total": 216.0,
+          "kcs_total": 216.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        },
+        {
+          "blok": "136",
+          "mandor_total": 408.0,
+          "kcs_total": 405.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "138",
+          "mandor_total": 185.0,
+          "kcs_total": 184.0,
+          "selisih": -1.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139A",
+          "mandor_total": 507.0,
+          "kcs_total": 511.0,
+          "selisih": 4.0,
+          "discrepancies": 2,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139B",
+          "mandor_total": 101.0,
+          "kcs_total": 101.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24A/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24B/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": "Diperiksa Oleh Mandor 1",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "16a71c02",
+    "timestamp": "2026-10-19 10:07:14",
+    "timestamp_display": "19 Oct 2026 10:07",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "AFD01",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 14,
+    "matched_count": 10,
+    "diff_count": 4,
+    "need_verification_count": 4,
+    "total_mandor": 1417.0,
+    "total_kcs": 1417.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 3,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA04",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA20",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA05",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA06",
+          "data_mandor": 111.0,
+          "data_kcs": 111.0,
+          "raw_mandor": "111",
+          "raw_kcs": "111",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 111.0,
+            "kcs_val": 111.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA07",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA17",
+          "data_mandor": 72.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "72",
+          "raw_kcs": "69",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 69.0,
+            "diff": -3.0,
+            "reason": "KCS (69) < Mandor (72). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 85.0,
+          "data_kcs": 85.0,
+          "raw_mandor": "85",
+          "raw_kcs": "85",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 85.0,
+            "kcs_val": 85.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 8,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA08",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 9,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA24",
+          "data_mandor": 70.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "70",
+          "raw_kcs": "69",
+          "selisih": -1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 69.0,
+            "diff": -1.0,
+            "reason": "KCS (69) < Mandor (70). Selisih: -1. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 10,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA01",
+          "data_mandor": 153.0,
+          "data_kcs": 153.0,
+          "raw_mandor": "153",
+          "raw_kcs": "153",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 153.0,
+            "kcs_val": 153.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 11,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA10",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 12,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA13",
+          "data_mandor": 120.0,
+          "data_kcs": 121.0,
+          "raw_mandor": "120",
+          "raw_kcs": "121",
+          "selisih": 1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 120.0,
+            "kcs_val": 121.0,
+            "diff": 1.0,
+            "reason": "KCS (121) > Mandor (120). Selisih: +1. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 13,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA21",
+          "data_mandor": 162.0,
+          "data_kcs": 162.0,
+          "raw_mandor": "162",
+          "raw_kcs": "162",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 162.0,
+            "kcs_val": 162.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 14,
+          "tanggal": "10/16/2026",
+          "blok": "139B",
+          "kode_pekerja": "AA02",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 409.0,
+          "kcs_value": 409.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Berondolan Dipipil",
+          "mandor_value": 0.0,
+          "kcs_value": 0.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 54.0,
+          "kcs_value": null,
+          "selisih": null,
+          "status": "Tidak Tersedia pada Laporan KCS",
+          "keterangan": "Laporan KCS tidak mencatat luasan (bukan selisih produksi buah)."
+        }
+      ],
+      "total_rows_compared": 14,
+      "status_counts": {
+        "Cocok": 10,
+        "Berbeda": 4,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 1417.0,
+      "total_kcs": 1417.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 3,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        "136",
+        "138",
+        "139A"
+      ],
+      "affected_workers": [
+        "AA10",
+        "AA13",
+        "AA17",
+        "AA24"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "135",
+          "mandor_total": 216.0,
+          "kcs_total": 216.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        },
+        {
+          "blok": "136",
+          "mandor_total": 408.0,
+          "kcs_total": 405.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "138",
+          "mandor_total": 185.0,
+          "kcs_total": 184.0,
+          "selisih": -1.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139A",
+          "mandor_total": 507.0,
+          "kcs_total": 511.0,
+          "selisih": 4.0,
+          "discrepancies": 2,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139B",
+          "mandor_total": 101.0,
+          "kcs_total": 101.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24A/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24B/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": "Diperiksa Oleh Mandor 1",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "6c3720bc",
+    "timestamp": "2026-10-19 10:03:21",
+    "timestamp_display": "19 Oct 2026 10:03",
+    "mandor_filename": "tc7_mandor_offset.pdf",
+    "kcs_filename": "tc7_kcs_offset.pdf",
+    "tanggal_laporan": "16/10/2026",
+    "afdeling": "AFDELING 1",
+    "kebun": "-",
+    "total_rows": 2,
+    "matched_count": 0,
+    "diff_count": 2,
+    "need_verification_count": 2,
+    "total_mandor": 152.0,
+    "total_kcs": 152.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 2,
+    "affected_workers_count": 2,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "16/10/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "16/10/2026",
+          "blok": "137",
+          "kode_pekerja": "BB01",
+          "data_mandor": 80.0,
+          "data_kcs": 77.0,
+          "raw_mandor": "80",
+          "raw_kcs": "77",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 80.0,
+            "kcs_val": 77.0,
+            "diff": -3.0,
+            "reason": "KCS (77) < Mandor (80). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 22.0,
+          "kcs_value": 22.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 3.3,
+          "kcs_value": 3.3,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        }
+      ],
+      "total_rows_compared": 2,
+      "status_counts": {
+        "Cocok": 0,
+        "Berbeda": 2,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 2
+      },
+      "total_mandor": 152.0,
+      "total_kcs": 152.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 2,
+      "affected_workers_count": 2,
+      "affected_blocks": [
+        "136",
+        "137"
+      ],
+      "affected_workers": [
+        "AA19",
+        "BB01"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "136",
+          "mandor_total": 72.0,
+          "kcs_total": 75.0,
+          "selisih": 3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "137",
+          "mandor_total": 80.0,
+          "kcs_total": 77.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nomor_dokumen": null,
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": 152.0
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nomor_dokumen": null,
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": 152.0
+    }
+  },
+  {
+    "id": "0ade1f46",
+    "timestamp": "2026-10-19 09:24:11",
+    "timestamp_display": "19 Oct 2026 09:24",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "AFD01",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 14,
+    "matched_count": 10,
+    "diff_count": 4,
+    "need_verification_count": 4,
+    "total_mandor": 1417.0,
+    "total_kcs": 1417.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 3,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA04",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA20",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA05",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA06",
+          "data_mandor": 111.0,
+          "data_kcs": 111.0,
+          "raw_mandor": "111",
+          "raw_kcs": "111",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 111.0,
+            "kcs_val": 111.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA07",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA17",
+          "data_mandor": 72.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "72",
+          "raw_kcs": "69",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 69.0,
+            "diff": -3.0,
+            "reason": "KCS (69) < Mandor (72). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 85.0,
+          "data_kcs": 85.0,
+          "raw_mandor": "85",
+          "raw_kcs": "85",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 85.0,
+            "kcs_val": 85.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 8,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA08",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 9,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA24",
+          "data_mandor": 70.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "70",
+          "raw_kcs": "69",
+          "selisih": -1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 69.0,
+            "diff": -1.0,
+            "reason": "KCS (69) < Mandor (70). Selisih: -1. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 10,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA01",
+          "data_mandor": 153.0,
+          "data_kcs": 153.0,
+          "raw_mandor": "153",
+          "raw_kcs": "153",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 153.0,
+            "kcs_val": 153.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 11,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA10",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 12,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA13",
+          "data_mandor": 120.0,
+          "data_kcs": 121.0,
+          "raw_mandor": "120",
+          "raw_kcs": "121",
+          "selisih": 1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 120.0,
+            "kcs_val": 121.0,
+            "diff": 1.0,
+            "reason": "KCS (121) > Mandor (120). Selisih: +1. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 13,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA21",
+          "data_mandor": 162.0,
+          "data_kcs": 162.0,
+          "raw_mandor": "162",
+          "raw_kcs": "162",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 162.0,
+            "kcs_val": 162.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 14,
+          "tanggal": "10/16/2026",
+          "blok": "139B",
+          "kode_pekerja": "AA02",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 409.0,
+          "kcs_value": 409.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Berondolan Dipipil",
+          "mandor_value": 0.0,
+          "kcs_value": 0.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 54.0,
+          "kcs_value": null,
+          "selisih": null,
+          "status": "Tidak Tersedia pada Laporan KCS",
+          "keterangan": "Laporan KCS tidak mencatat luasan (bukan selisih produksi buah)."
+        }
+      ],
+      "total_rows_compared": 14,
+      "status_counts": {
+        "Cocok": 10,
+        "Berbeda": 4,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 1417.0,
+      "total_kcs": 1417.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 3,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        "136",
+        "138",
+        "139A"
+      ],
+      "affected_workers": [
+        "AA10",
+        "AA13",
+        "AA17",
+        "AA24"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "135",
+          "mandor_total": 216.0,
+          "kcs_total": 216.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        },
+        {
+          "blok": "136",
+          "mandor_total": 408.0,
+          "kcs_total": 405.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "138",
+          "mandor_total": 185.0,
+          "kcs_total": 184.0,
+          "selisih": -1.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139A",
+          "mandor_total": 507.0,
+          "kcs_total": 511.0,
+          "selisih": 4.0,
+          "discrepancies": 2,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139B",
+          "mandor_total": 101.0,
+          "kcs_total": 101.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24A/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24B/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": "Diperiksa Oleh Mandor 1",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "e01aaaf1",
+    "timestamp": "2026-10-19 08:51:59",
+    "timestamp_display": "19 Oct 2026 08:51",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "AFD01",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 14,
+    "matched_count": 10,
+    "diff_count": 4,
+    "need_verification_count": 4,
+    "total_mandor": 1417.0,
+    "total_kcs": 1417.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 3,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA04",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA20",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA05",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA06",
+          "data_mandor": 111.0,
+          "data_kcs": 111.0,
+          "raw_mandor": "111",
+          "raw_kcs": "111",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 111.0,
+            "kcs_val": 111.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA07",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA17",
+          "data_mandor": 72.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "72",
+          "raw_kcs": "69",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 69.0,
+            "diff": -3.0,
+            "reason": "KCS (69) < Mandor (72). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 85.0,
+          "data_kcs": 85.0,
+          "raw_mandor": "85",
+          "raw_kcs": "85",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 85.0,
+            "kcs_val": 85.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 8,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA08",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 9,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA24",
+          "data_mandor": 70.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "70",
+          "raw_kcs": "69",
+          "selisih": -1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 69.0,
+            "diff": -1.0,
+            "reason": "KCS (69) < Mandor (70). Selisih: -1. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 10,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA01",
+          "data_mandor": 153.0,
+          "data_kcs": 153.0,
+          "raw_mandor": "153",
+          "raw_kcs": "153",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 153.0,
+            "kcs_val": 153.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 11,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA10",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 12,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA13",
+          "data_mandor": 120.0,
+          "data_kcs": 121.0,
+          "raw_mandor": "120",
+          "raw_kcs": "121",
+          "selisih": 1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 120.0,
+            "kcs_val": 121.0,
+            "diff": 1.0,
+            "reason": "KCS (121) > Mandor (120). Selisih: +1. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 13,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA21",
+          "data_mandor": 162.0,
+          "data_kcs": 162.0,
+          "raw_mandor": "162",
+          "raw_kcs": "162",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 162.0,
+            "kcs_val": 162.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 14,
+          "tanggal": "10/16/2026",
+          "blok": "139B",
+          "kode_pekerja": "AA02",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 409.0,
+          "kcs_value": 409.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Berondolan Dipipil",
+          "mandor_value": 0.0,
+          "kcs_value": 0.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 54.0,
+          "kcs_value": null,
+          "selisih": null,
+          "status": "Tidak Tersedia pada Laporan KCS",
+          "keterangan": "Laporan KCS tidak mencatat luasan (bukan selisih produksi buah)."
+        }
+      ],
+      "total_rows_compared": 14,
+      "status_counts": {
+        "Cocok": 10,
+        "Berbeda": 4,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 1417.0,
+      "total_kcs": 1417.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 3,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        "136",
+        "138",
+        "139A"
+      ],
+      "affected_workers": [
+        "AA10",
+        "AA13",
+        "AA17",
+        "AA24"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "135",
+          "mandor_total": 216.0,
+          "kcs_total": 216.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        },
+        {
+          "blok": "136",
+          "mandor_total": 408.0,
+          "kcs_total": 405.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "138",
+          "mandor_total": 185.0,
+          "kcs_total": 184.0,
+          "selisih": -1.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139A",
+          "mandor_total": 507.0,
+          "kcs_total": 511.0,
+          "selisih": 4.0,
+          "discrepancies": 2,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139B",
+          "mandor_total": 101.0,
+          "kcs_total": 101.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24A/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24B/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": "Diperiksa Oleh Mandor 1",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "46885d16",
+    "timestamp": "2026-10-17 11:10:13",
+    "timestamp_display": "17 Oct 2026 11:10",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "AFD01",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 14,
+    "matched_count": 10,
+    "diff_count": 4,
+    "need_verification_count": 4,
+    "total_mandor": 1417.0,
+    "total_kcs": 1417.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 3,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA04",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA20",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA05",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA06",
+          "data_mandor": 111.0,
+          "data_kcs": 111.0,
+          "raw_mandor": "111",
+          "raw_kcs": "111",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 111.0,
+            "kcs_val": 111.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA07",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA17",
+          "data_mandor": 72.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "72",
+          "raw_kcs": "69",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 69.0,
+            "diff": -3.0,
+            "reason": "KCS (69) < Mandor (72). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 85.0,
+          "data_kcs": 85.0,
+          "raw_mandor": "85",
+          "raw_kcs": "85",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 85.0,
+            "kcs_val": 85.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 8,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA08",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 9,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA24",
+          "data_mandor": 70.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "70",
+          "raw_kcs": "69",
+          "selisih": -1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 69.0,
+            "diff": -1.0,
+            "reason": "KCS (69) < Mandor (70). Selisih: -1. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 10,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA01",
+          "data_mandor": 153.0,
+          "data_kcs": 153.0,
+          "raw_mandor": "153",
+          "raw_kcs": "153",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 153.0,
+            "kcs_val": 153.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 11,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA10",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 12,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA13",
+          "data_mandor": 120.0,
+          "data_kcs": 121.0,
+          "raw_mandor": "120",
+          "raw_kcs": "121",
+          "selisih": 1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 120.0,
+            "kcs_val": 121.0,
+            "diff": 1.0,
+            "reason": "KCS (121) > Mandor (120). Selisih: +1. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 13,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA21",
+          "data_mandor": 162.0,
+          "data_kcs": 162.0,
+          "raw_mandor": "162",
+          "raw_kcs": "162",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 162.0,
+            "kcs_val": 162.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 14,
+          "tanggal": "10/16/2026",
+          "blok": "139B",
+          "kode_pekerja": "AA02",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 409.0,
+          "kcs_value": 409.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Berondolan Dipipil",
+          "mandor_value": 0.0,
+          "kcs_value": 0.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 54.0,
+          "kcs_value": null,
+          "selisih": null,
+          "status": "Tidak Tersedia pada Laporan KCS",
+          "keterangan": "Laporan KCS tidak mencatat luasan (bukan selisih produksi buah)."
+        }
+      ],
+      "total_rows_compared": 14,
+      "status_counts": {
+        "Cocok": 10,
+        "Berbeda": 4,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 1417.0,
+      "total_kcs": 1417.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 3,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        "136",
+        "138",
+        "139A"
+      ],
+      "affected_workers": [
+        "AA10",
+        "AA13",
+        "AA17",
+        "AA24"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "135",
+          "mandor_total": 216.0,
+          "kcs_total": 216.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        },
+        {
+          "blok": "136",
+          "mandor_total": 408.0,
+          "kcs_total": 405.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "138",
+          "mandor_total": 185.0,
+          "kcs_total": 184.0,
+          "selisih": -1.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139A",
+          "mandor_total": 507.0,
+          "kcs_total": 511.0,
+          "selisih": 4.0,
+          "discrepancies": 2,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139B",
+          "mandor_total": 101.0,
+          "kcs_total": 101.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24A/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24B/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": "Diperiksa Oleh Mandor 1",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "bd07cb63",
+    "timestamp": "2026-10-17 11:08:28",
+    "timestamp_display": "17 Oct 2026 11:08",
+    "mandor_filename": "tc7_mandor_offset.pdf",
+    "kcs_filename": "tc7_kcs_offset.pdf",
+    "tanggal_laporan": "16/10/2026",
+    "afdeling": "AFDELING 1",
+    "kebun": "-",
+    "total_rows": 2,
+    "matched_count": 0,
+    "diff_count": 2,
+    "need_verification_count": 2,
+    "total_mandor": 152.0,
+    "total_kcs": 152.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 2,
+    "affected_workers_count": 2,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "16/10/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "16/10/2026",
+          "blok": "137",
+          "kode_pekerja": "BB01",
+          "data_mandor": 80.0,
+          "data_kcs": 77.0,
+          "raw_mandor": "80",
+          "raw_kcs": "77",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 80.0,
+            "kcs_val": 77.0,
+            "diff": -3.0,
+            "reason": "KCS (77) < Mandor (80). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 22.0,
+          "kcs_value": 22.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 3.3,
+          "kcs_value": 3.3,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        }
+      ],
+      "total_rows_compared": 2,
+      "status_counts": {
+        "Cocok": 0,
+        "Berbeda": 2,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 2
+      },
+      "total_mandor": 152.0,
+      "total_kcs": 152.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 2,
+      "affected_workers_count": 2,
+      "affected_blocks": [
+        "136",
+        "137"
+      ],
+      "affected_workers": [
+        "AA19",
+        "BB01"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "136",
+          "mandor_total": 72.0,
+          "kcs_total": 75.0,
+          "selisih": 3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "137",
+          "mandor_total": 80.0,
+          "kcs_total": 77.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nomor_dokumen": null,
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": 152.0
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nomor_dokumen": null,
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": 152.0
+    }
+  },
+  {
+    "id": "08df2fbc",
+    "timestamp": "2026-10-17 11:07:59",
+    "timestamp_display": "17 Oct 2026 11:07",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "AFD01",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 14,
+    "matched_count": 10,
+    "diff_count": 4,
+    "need_verification_count": 4,
+    "total_mandor": 1417.0,
+    "total_kcs": 1417.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 3,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA04",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA20",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA05",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA06",
+          "data_mandor": 111.0,
+          "data_kcs": 111.0,
+          "raw_mandor": "111",
+          "raw_kcs": "111",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 111.0,
+            "kcs_val": 111.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA07",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA17",
+          "data_mandor": 72.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "72",
+          "raw_kcs": "69",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 69.0,
+            "diff": -3.0,
+            "reason": "KCS (69) < Mandor (72). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 85.0,
+          "data_kcs": 85.0,
+          "raw_mandor": "85",
+          "raw_kcs": "85",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 85.0,
+            "kcs_val": 85.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 8,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA08",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 9,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA24",
+          "data_mandor": 70.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "70",
+          "raw_kcs": "69",
+          "selisih": -1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 69.0,
+            "diff": -1.0,
+            "reason": "KCS (69) < Mandor (70). Selisih: -1. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 10,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA01",
+          "data_mandor": 153.0,
+          "data_kcs": 153.0,
+          "raw_mandor": "153",
+          "raw_kcs": "153",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 153.0,
+            "kcs_val": 153.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 11,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA10",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 12,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA13",
+          "data_mandor": 120.0,
+          "data_kcs": 121.0,
+          "raw_mandor": "120",
+          "raw_kcs": "121",
+          "selisih": 1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 120.0,
+            "kcs_val": 121.0,
+            "diff": 1.0,
+            "reason": "KCS (121) > Mandor (120). Selisih: +1. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 13,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA21",
+          "data_mandor": 162.0,
+          "data_kcs": 162.0,
+          "raw_mandor": "162",
+          "raw_kcs": "162",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 162.0,
+            "kcs_val": 162.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 14,
+          "tanggal": "10/16/2026",
+          "blok": "139B",
+          "kode_pekerja": "AA02",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 409.0,
+          "kcs_value": 409.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Berondolan Dipipil",
+          "mandor_value": 0.0,
+          "kcs_value": 0.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 54.0,
+          "kcs_value": null,
+          "selisih": null,
+          "status": "Tidak Tersedia pada Laporan KCS",
+          "keterangan": "Laporan KCS tidak mencatat luasan (bukan selisih produksi buah)."
+        }
+      ],
+      "total_rows_compared": 14,
+      "status_counts": {
+        "Cocok": 10,
+        "Berbeda": 4,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 1417.0,
+      "total_kcs": 1417.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 3,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        "136",
+        "138",
+        "139A"
+      ],
+      "affected_workers": [
+        "AA10",
+        "AA13",
+        "AA17",
+        "AA24"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "135",
+          "mandor_total": 216.0,
+          "kcs_total": 216.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        },
+        {
+          "blok": "136",
+          "mandor_total": 408.0,
+          "kcs_total": 405.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "138",
+          "mandor_total": 185.0,
+          "kcs_total": 184.0,
+          "selisih": -1.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139A",
+          "mandor_total": 507.0,
+          "kcs_total": 511.0,
+          "selisih": 4.0,
+          "discrepancies": 2,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139B",
+          "mandor_total": 101.0,
+          "kcs_total": 101.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24A/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24B/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": "Diperiksa Oleh Mandor 1",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "e5e09ddb",
+    "timestamp": "2026-10-17 11:06:39",
+    "timestamp_display": "17 Oct 2026 11:06",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "AFD01",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 14,
+    "matched_count": 10,
+    "diff_count": 4,
+    "need_verification_count": 4,
+    "total_mandor": 1417.0,
+    "total_kcs": 1417.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 3,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA04",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "135",
+          "kode_pekerja": "AA20",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA05",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA06",
+          "data_mandor": 111.0,
+          "data_kcs": 111.0,
+          "raw_mandor": "111",
+          "raw_kcs": "111",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 111.0,
+            "kcs_val": 111.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA07",
+          "data_mandor": 70.0,
+          "data_kcs": 70.0,
+          "raw_mandor": "70",
+          "raw_kcs": "70",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 70.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA17",
+          "data_mandor": 72.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "72",
+          "raw_kcs": "69",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 69.0,
+            "diff": -3.0,
+            "reason": "KCS (69) < Mandor (72). Selisih: -3. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 85.0,
+          "data_kcs": 85.0,
+          "raw_mandor": "85",
+          "raw_kcs": "85",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 85.0,
+            "kcs_val": 85.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 8,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA08",
+          "data_mandor": 115.0,
+          "data_kcs": 115.0,
+          "raw_mandor": "115",
+          "raw_kcs": "115",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 115.0,
+            "kcs_val": 115.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 9,
+          "tanggal": "10/16/2026",
+          "blok": "138",
+          "kode_pekerja": "AA24",
+          "data_mandor": 70.0,
+          "data_kcs": 69.0,
+          "raw_mandor": "70",
+          "raw_kcs": "69",
+          "selisih": -1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 70.0,
+            "kcs_val": 69.0,
+            "diff": -1.0,
+            "reason": "KCS (69) < Mandor (70). Selisih: -1. Kemungkinan buah tertinggal di TPH (restan) atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 10,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA01",
+          "data_mandor": 153.0,
+          "data_kcs": 153.0,
+          "raw_mandor": "153",
+          "raw_kcs": "153",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 153.0,
+            "kcs_val": 153.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 11,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA10",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "KCS (75) > Mandor (72). Selisih: +3. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 12,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA13",
+          "data_mandor": 120.0,
+          "data_kcs": 121.0,
+          "raw_mandor": "120",
+          "raw_kcs": "121",
+          "selisih": 1.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 1 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 120.0,
+            "kcs_val": 121.0,
+            "diff": 1.0,
+            "reason": "KCS (121) > Mandor (120). Selisih: +1. Kemungkinan terjadi penggabungan janjang pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 13,
+          "tanggal": "10/16/2026",
+          "blok": "139A",
+          "kode_pekerja": "AA21",
+          "data_mandor": 162.0,
+          "data_kcs": 162.0,
+          "raw_mandor": "162",
+          "raw_kcs": "162",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 162.0,
+            "kcs_val": 162.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 14,
+          "tanggal": "10/16/2026",
+          "blok": "139B",
+          "kode_pekerja": "AA02",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101",
+          "raw_kcs": "101",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "additional_attributes": [
+        {
+          "attribute": "Berondolan (Kg/Sak)",
+          "mandor_value": 409.0,
+          "kcs_value": 409.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Berondolan Dipipil",
+          "mandor_value": 0.0,
+          "kcs_value": 0.0,
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Sesuai"
+        },
+        {
+          "attribute": "Luasan Panen (Ha)",
+          "mandor_value": 54.0,
+          "kcs_value": null,
+          "selisih": null,
+          "status": "Tidak Tersedia pada Laporan Mandor",
+          "keterangan": "Laporan Mandor tidak mencatat luasan (bukan selisih produksi buah)."
+        }
+      ],
+      "total_rows_compared": 14,
+      "status_counts": {
+        "Cocok": 10,
+        "Berbeda": 4,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 1417.0,
+      "total_kcs": 1417.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 3,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        "136",
+        "138",
+        "139A"
+      ],
+      "affected_workers": [
+        "AA10",
+        "AA13",
+        "AA17",
+        "AA24"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "135",
+          "mandor_total": 216.0,
+          "kcs_total": 216.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        },
+        {
+          "blok": "136",
+          "mandor_total": 408.0,
+          "kcs_total": 405.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "138",
+          "mandor_total": 185.0,
+          "kcs_total": 184.0,
+          "selisih": -1.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139A",
+          "mandor_total": 507.0,
+          "kcs_total": 511.0,
+          "selisih": 4.0,
+          "discrepancies": 2,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "139B",
+          "mandor_total": 101.0,
+          "kcs_total": 101.0,
+          "selisih": 0.0,
+          "discrepancies": 0,
+          "status": "Cocok"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24A/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": "AFD01",
+      "nomor_dokumen": "PB24B/5E15/AFD01/10/16/2026",
+      "nama_mandor": "IWAN YULIANTO Tgl",
+      "nama_krani": "Diperiksa Oleh Mandor 1",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "1a380d7e",
+    "timestamp": "2026-10-17 10:44:30",
+    "timestamp_display": "17 Oct 2026 10:44",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "-",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 7,
+    "matched_count": 3,
+    "diff_count": 0,
+    "need_verification_count": 4,
+    "total_mandor": 3297.0,
+    "total_kcs": 3243.0,
+    "total_selisih": -54.0,
+    "has_offsetting_differences": false,
+    "affected_blocks_count": 1,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "2004",
+          "data_mandor": 1316.0,
+          "data_kcs": 1316.0,
+          "raw_mandor": "216,00, 408,00, 185,00, 507,00",
+          "raw_kcs": "216,00, 405,00, 184,00, 511,00",
+          "selisih": 0.0,
+          "status": "Duplikat",
+          "keterangan": "Baris data ganda ditemukan pada laporan Mandor (4 kali) dan KCS (4 kali).",
+          "severity": "orange",
+          "detail": {
+            "is_duplicate": true,
+            "mandor_occurrences": 4,
+            "kcs_occurrences": 4,
+            "reason": "Ditemukan data ganda untuk kombinasi blok dan pekerja ini."
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "2005",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101,00",
+          "raw_kcs": "101,00",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "BERONDOLAN",
+          "data_mandor": 409.0,
+          "data_kcs": 409.0,
+          "raw_mandor": "409",
+          "raw_kcs": "409",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 409.0,
+            "kcs_val": 409.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "BERONDOLAN DIPIPIL",
+          "data_mandor": 0.0,
+          "data_kcs": null,
+          "raw_mandor": "0",
+          "raw_kcs": "-",
+          "selisih": -0.0,
+          "status": "Hanya Ada di Mandor",
+          "keterangan": "Data terdaftar pada laporan panen Mandor, tetapi tidak ditemukan di laporan angkut KCS.",
+          "severity": "orange",
+          "detail": {
+            "reason": "Buah telah dipanen oleh Mandor namun belum tercatat diangkut oleh KCS. Cek apakah buah tertinggal di TPH (restan) atau belum sempat terangkut."
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "BERONDOLAN PIPIL",
+          "data_mandor": null,
+          "data_kcs": 0.0,
+          "raw_mandor": "-",
+          "raw_kcs": "0",
+          "selisih": 0.0,
+          "status": "Hanya Ada di KCS",
+          "keterangan": "Data terdaftar pada laporan angkut KCS, tetapi tidak ditemukan di laporan panen Mandor.",
+          "severity": "orange",
+          "detail": {
+            "reason": "Data tercatat oleh KCS namun tidak ada dalam rekapan Mandor. Periksa apakah pekerja dialihkan atau salah input kode blok."
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "JUMLAH",
+          "data_mandor": 1417.0,
+          "data_kcs": 1417.0,
+          "raw_mandor": "1417",
+          "raw_kcs": "1417",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 1417.0,
+            "kcs_val": 1417.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "LUASAN",
+          "data_mandor": 54.0,
+          "data_kcs": null,
+          "raw_mandor": "54.00",
+          "raw_kcs": "-",
+          "selisih": -54.0,
+          "status": "Hanya Ada di Mandor",
+          "keterangan": "Data terdaftar pada laporan panen Mandor, tetapi tidak ditemukan di laporan angkut KCS.",
+          "severity": "orange",
+          "detail": {
+            "reason": "Buah telah dipanen oleh Mandor namun belum tercatat diangkut oleh KCS. Cek apakah buah tertinggal di TPH (restan) atau belum sempat terangkut."
+          }
+        }
+      ],
+      "total_rows_compared": 7,
+      "status_counts": {
+        "Cocok": 3,
+        "Berbeda": 0,
+        "Hanya Ada di Mandor": 2,
+        "Hanya Ada di KCS": 1,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 1,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 3297.0,
+      "total_kcs": 3243.0,
+      "total_selisih": -54.0,
+      "has_offsetting_differences": false,
+      "affected_blocks_count": 1,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        ""
+      ],
+      "affected_workers": [
+        "2004",
+        "BERONDOLAN DIPIPIL",
+        "BERONDOLAN PIPIL",
+        "LUASAN"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "",
+          "mandor_total": 3297.0,
+          "kcs_total": 3243.0,
+          "selisih": -54.0,
+          "discrepancies": 4,
+          "status": "Perlu Verifikasi"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": null,
+      "nama_mandor": "1 Diketahui Oleh Asisten",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": null,
+      "nama_mandor": "1 Diketahui Oleh Asisten",
+      "nama_krani": "Diperiksa Oleh",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "2003226f",
+    "timestamp": "2026-10-17 10:34:22",
+    "timestamp_display": "17 Oct 2026 10:34",
+    "mandor_filename": "PB24A _ Report.pdf",
+    "kcs_filename": "PB24B _ Report.pdf",
+    "tanggal_laporan": "10/16/2026",
+    "afdeling": "-",
+    "kebun": "5E15 - Kb Pelaihari",
+    "total_rows": 7,
+    "matched_count": 3,
+    "diff_count": 0,
+    "need_verification_count": 4,
+    "total_mandor": 3297.0,
+    "total_kcs": 3243.0,
+    "total_selisih": -54.0,
+    "has_offsetting_differences": false,
+    "affected_blocks_count": 1,
+    "affected_workers_count": 4,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "2004",
+          "data_mandor": 1316.0,
+          "data_kcs": 1316.0,
+          "raw_mandor": "216,00, 408,00, 185,00, 507,00",
+          "raw_kcs": "216,00, 405,00, 184,00, 511,00",
+          "selisih": 0.0,
+          "status": "Duplikat",
+          "keterangan": "Baris data ganda ditemukan pada laporan Mandor (4 kali) dan KCS (4 kali).",
+          "severity": "orange",
+          "detail": {
+            "is_duplicate": true,
+            "mandor_occurrences": 4,
+            "kcs_occurrences": 4,
+            "reason": "Ditemukan data ganda untuk kombinasi blok dan pekerja ini."
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "2005",
+          "data_mandor": 101.0,
+          "data_kcs": 101.0,
+          "raw_mandor": "101,00",
+          "raw_kcs": "101,00",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 101.0,
+            "kcs_val": 101.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 3,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "BERONDOLAN",
+          "data_mandor": 409.0,
+          "data_kcs": 409.0,
+          "raw_mandor": "409",
+          "raw_kcs": "409",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 409.0,
+            "kcs_val": 409.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 4,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "BERONDOLAN DIPIPIL",
+          "data_mandor": 0.0,
+          "data_kcs": null,
+          "raw_mandor": "0",
+          "raw_kcs": "-",
+          "selisih": -0.0,
+          "status": "Hanya Ada di Mandor",
+          "keterangan": "Data terdaftar pada laporan panen Mandor, tetapi tidak ditemukan di laporan angkut KCS.",
+          "severity": "orange",
+          "detail": {
+            "reason": "Buah telah dipanen oleh Mandor namun belum tercatat diangkut oleh KCS. Cek apakah buah tertinggal di TPH (restan) atau belum sempat terangkut."
+          }
+        },
+        {
+          "no": 5,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "BERONDOLAN PIPIL",
+          "data_mandor": null,
+          "data_kcs": 0.0,
+          "raw_mandor": "-",
+          "raw_kcs": "0",
+          "selisih": 0.0,
+          "status": "Hanya Ada di KCS",
+          "keterangan": "Data terdaftar pada laporan angkut KCS, tetapi tidak ditemukan di laporan panen Mandor.",
+          "severity": "orange",
+          "detail": {
+            "reason": "Data tercatat oleh KCS namun tidak ada dalam rekapan Mandor. Periksa apakah pekerja dialihkan atau salah input kode blok."
+          }
+        },
+        {
+          "no": 6,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "JUMLAH",
+          "data_mandor": 1417.0,
+          "data_kcs": 1417.0,
+          "raw_mandor": "1417",
+          "raw_kcs": "1417",
+          "selisih": 0.0,
+          "status": "Cocok",
+          "keterangan": "Jumlah buah sesuai antara laporan Mandor dan KCS.",
+          "severity": "green",
+          "detail": {
+            "mandor_val": 1417.0,
+            "kcs_val": 1417.0,
+            "diff": 0.0,
+            "reason": "Data identik dan terverifikasi.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 7,
+          "tanggal": "10/16/2026",
+          "blok": "-",
+          "kode_pekerja": "LUASAN",
+          "data_mandor": 54.0,
+          "data_kcs": null,
+          "raw_mandor": "54.00",
+          "raw_kcs": "-",
+          "selisih": -54.0,
+          "status": "Hanya Ada di Mandor",
+          "keterangan": "Data terdaftar pada laporan panen Mandor, tetapi tidak ditemukan di laporan angkut KCS.",
+          "severity": "orange",
+          "detail": {
+            "reason": "Buah telah dipanen oleh Mandor namun belum tercatat diangkut oleh KCS. Cek apakah buah tertinggal di TPH (restan) atau belum sempat terangkut."
+          }
+        }
+      ],
+      "total_rows_compared": 7,
+      "status_counts": {
+        "Cocok": 3,
+        "Berbeda": 0,
+        "Hanya Ada di Mandor": 2,
+        "Hanya Ada di KCS": 1,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 1,
+        "Perlu Verifikasi": 4
+      },
+      "total_mandor": 3297.0,
+      "total_kcs": 3243.0,
+      "total_selisih": -54.0,
+      "has_offsetting_differences": false,
+      "affected_blocks_count": 1,
+      "affected_workers_count": 4,
+      "affected_blocks": [
+        ""
+      ],
+      "affected_workers": [
+        "2004",
+        "BERONDOLAN DIPIPIL",
+        "BERONDOLAN PIPIL",
+        "LUASAN"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "",
+          "mandor_total": 3297.0,
+          "kcs_total": 3243.0,
+          "selisih": -54.0,
+          "discrepancies": 4,
+          "status": "Perlu Verifikasi"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": null,
+      "nama_mandor": "1 Diketahui Oleh Asisten",
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": null
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "10/16/2026",
+      "tanggal_aktivitas": "10/16/2026",
+      "kebun": "5E15 - Kb Pelaihari",
+      "afdeling": null,
+      "nama_mandor": "1 Diketahui Oleh Asisten",
+      "nama_krani": "Diperiksa Oleh",
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": null
+    }
+  },
+  {
+    "id": "4566fcd9",
+    "timestamp": "2026-10-17 10:29:28",
+    "timestamp_display": "17 Oct 2026 10:29",
+    "mandor_filename": "tc7_mandor_offset.pdf",
+    "kcs_filename": "tc7_kcs_offset.pdf",
+    "tanggal_laporan": "16/10/2026",
+    "afdeling": "AFDELING 1",
+    "kebun": "-",
+    "total_rows": 2,
+    "matched_count": 0,
+    "diff_count": 2,
+    "need_verification_count": 2,
+    "total_mandor": 152.0,
+    "total_kcs": 152.0,
+    "total_selisih": 0.0,
+    "has_offsetting_differences": true,
+    "affected_blocks_count": 2,
+    "affected_workers_count": 2,
+    "comparison_result": {
+      "results": [
+        {
+          "no": 1,
+          "tanggal": "16/10/2026",
+          "blok": "136",
+          "kode_pekerja": "AA19",
+          "data_mandor": 72.0,
+          "data_kcs": 75.0,
+          "raw_mandor": "72",
+          "raw_kcs": "75",
+          "selisih": 3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih banyak 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 72.0,
+            "kcs_val": 75.0,
+            "diff": 3.0,
+            "reason": "Laporan KCS (75) > Mandor (72). Selisih: +3. Perlu verifikasi apakah ada penggabungan janjang dari pekerja lain atau kelebihan hitung.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        },
+        {
+          "no": 2,
+          "tanggal": "16/10/2026",
+          "blok": "137",
+          "kode_pekerja": "BB01",
+          "data_mandor": 80.0,
+          "data_kcs": 77.0,
+          "raw_mandor": "80",
+          "raw_kcs": "77",
+          "selisih": -3.0,
+          "status": "Berbeda",
+          "keterangan": "KCS mencatat lebih sedikit 3 janjang dibanding Mandor.",
+          "severity": "red",
+          "detail": {
+            "mandor_val": 80.0,
+            "kcs_val": 77.0,
+            "diff": -3.0,
+            "reason": "Laporan KCS (77) < Mandor (80). Selisih: -3. Perlu verifikasi apakah ada buah tertinggal di TPH atau afkir.",
+            "page_mandor": 1,
+            "page_kcs": 1
+          }
+        }
+      ],
+      "total_rows_compared": 2,
+      "status_counts": {
+        "Cocok": 0,
+        "Berbeda": 2,
+        "Hanya Ada di Mandor": 0,
+        "Hanya Ada di KCS": 0,
+        "Data Tidak Lengkap": 0,
+        "Duplikat": 0,
+        "Perlu Verifikasi": 2
+      },
+      "total_mandor": 152.0,
+      "total_kcs": 152.0,
+      "total_selisih": 0.0,
+      "has_offsetting_differences": true,
+      "affected_blocks_count": 2,
+      "affected_workers_count": 2,
+      "affected_blocks": [
+        "136",
+        "137"
+      ],
+      "affected_workers": [
+        "AA19",
+        "BB01"
+      ],
+      "block_breakdown": [
+        {
+          "blok": "136",
+          "mandor_total": 72.0,
+          "kcs_total": 75.0,
+          "selisih": 3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        },
+        {
+          "blok": "137",
+          "mandor_total": 80.0,
+          "kcs_total": 77.0,
+          "selisih": -3.0,
+          "discrepancies": 1,
+          "status": "Perlu Verifikasi"
+        }
+      ],
+      "disclaimer": "PENTING: Perbedaan antara laporan pengumpulan buah (Mandor) dan pengangkutan buah (KCS) belum tentu merupakan kesalahan input. Perbedaan dapat disebabkan oleh waktu pencatatan, buah restan (tertinggal di TPH), atau proses operasional lapangan. Harap gunakan data ini sebagai panduan verifikasi lapangan."
+    },
+    "mandor_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan Mandor (PB24A)",
+      "total_tertera": 152.0
+    },
+    "kcs_meta": {
+      "tanggal_laporan": "16/10/2026",
+      "tanggal_aktivitas": "16/10/2026",
+      "kebun": null,
+      "afdeling": "AFDELING 1",
+      "nama_mandor": null,
+      "nama_krani": null,
+      "jenis_laporan": "Laporan KCS (PB24B)",
+      "total_tertera": 152.0
+    }
+  }
+]

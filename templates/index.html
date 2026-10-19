@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>SIPEKA DF — Sistem Pemeriksa Kesalahan Data Digital Farming</title>
+    <meta name="description" content="Rekonsiliasi data panen Mandor (PB24A) dan KCS (PB24B) untuk perkebunan kelapa sawit secara otomatis dan akurat.">
+    <!-- Bootstrap 5 Offline -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- SIPEKA DF Stylesheet: White Clean Theme -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Inject API base path untuk JavaScript -->
+    
+</head>
+<body>
+
+
+
+<!-- Backdrop overlay untuk mobile sidebar -->
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+<div class="app-container">
+    <!-- ====================================================================
+         SIDEBAR NAVIGATION
+         ==================================================================== -->
+    <aside class="app-sidebar" id="app-sidebar">
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-left">
+                <div class="brand-icon">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h2>SIPEKA DF</h2>
+                    <span>Digital Farming Checker</span>
+                </div>
+            </div>
+            <button class="btn-sidebar-close" id="btn-sidebar-close" aria-label="Tutup Menu">
+                <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <ul class="sidebar-nav">
+            <li class="nav-item">
+                <a href="#dashboard" class="nav-link active" data-tab="dashboard">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/>
+                        <rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#upload" class="nav-link" data-tab="upload">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                        <polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/>
+                    </svg>
+                    <span>Pemeriksaan Data</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#results" class="nav-link" data-tab="results">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="m8 11 2 2 4-4"/>
+                    </svg>
+                    <span>Hasil Pemeriksaan</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#history" class="nav-link" data-tab="history">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <span>Riwayat</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#guide" class="nav-link" data-tab="guide">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                        <path d="M6 6h10"/><path d="M6 10h10"/>
+                    </svg>
+                    <span>Panduan Penggunaan</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link" data-tab="about">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+                    </svg>
+                    <span>Tentang Aplikasi</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div><span class="version-tag">SIPEKA DF</span> v1.0.0</div>
+            <span>Rekonsiliasi Sawit Mandor &amp; KCS</span>
+        </div>
+    </aside>
+
+    <!-- ====================================================================
+         MAIN CONTENT AREA
+         ==================================================================== -->
+    <main class="app-main">
+        <!-- Topbar -->
+        <header class="app-topbar">
+            <div class="topbar-left">
+                <button class="btn-mobile-sidebar-toggle" id="btn-mobile-sidebar-toggle" aria-label="Buka Menu">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="topbar-title">
+                    <h1 id="current-page-title">Dashboard Utama</h1>
+                    <p>Sistem Pemeriksa Kesalahan Data Digital Farming — Perkebunan Kelapa Sawit</p>
+                </div>
+            </div>
+            <div class="topbar-actions">
+                <div class="user-badge online">
+                    <span class="status-dot-pulse"></span>
+                    <span>Server Python Aktif (Lokal)</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Global Alert Container -->
+        <div class="px-3 px-md-4 pt-3" id="global-alert-container"></div>
+
+        <div class="app-content">
+
+            <!-- ============================================================
+                 TAB 1: DASHBOARD
+                 ============================================================ -->
+            <section id="tab-dashboard" class="tab-section active">
+                <div class="card-sipeka mb-4">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                        <div>
+                            <h2 class="h5 fw-bold mb-1">Selamat Datang di SIPEKA DF</h2>
+                            <p class="text-secondary small mb-0">
+                                Rekonsiliasi data panen (Form PB24A Mandor) dan data angkut (Form PB24B KCS).
+                                Deteksi ketidaksesuaian janjang, pergeseran blok, dan perbedaan pekerja dalam hitungan detik.
+                            </p>
+                        </div>
+                        <button class="btn-primary-green" id="btn-goto-upload">
+                            <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <span>Mulai Pemeriksaan Baru</span>
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="section-label mb-3">Statistik Pemeriksaan Sesi Saat Ini</h3>
+                <div class="stats-grid-row">
+                    <div class="stat-box primary">
+                        <div class="stat-title">Pemeriksaan Sesi Ini</div>
+                        <div class="stat-value" id="dash-stat-exam">0</div>
+                        <div class="stat-desc">Kali perbandingan dijalankan</div>
+                    </div>
+                    <div class="stat-box info">
+                        <div class="stat-title">Baris Dibandingkan</div>
+                        <div class="stat-value" id="dash-stat-rows">0</div>
+                        <div class="stat-desc">Total entri pekerja &amp; blok</div>
+                    </div>
+                    <div class="stat-box success">
+                        <div class="stat-title">Data Cocok</div>
+                        <div class="stat-value stat-green" id="dash-stat-match">0</div>
+                        <div class="stat-desc">Selisih nol (sesuai)</div>
+                    </div>
+                    <div class="stat-box danger">
+                        <div class="stat-title">Data Berbeda</div>
+                        <div class="stat-value stat-red" id="dash-stat-diff">0</div>
+                        <div class="stat-desc">Selisih janjang terdeteksi</div>
+                    </div>
+                    <div class="stat-box warning">
+                        <div class="stat-title">Perlu Verifikasi</div>
+                        <div class="stat-value stat-orange" id="dash-stat-uncomp">0</div>
+                        <div class="stat-desc">Hilang, duplikat, tidak lengkap</div>
+                    </div>
+                </div>
+
+                <!-- Session Notice -->
+                <div id="dash-empty-session-notice" class="card-sipeka text-center py-5">
+                    <div class="empty-icon mb-3">
+                        <svg class="si-icon xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <h4 class="h6 fw-bold mb-2">Belum Ada Pemeriksaan pada Sesi Ini</h4>
+                    <p class="text-secondary small mb-3">
+                        Statistik di atas menampilkan data riil sesi aktif Anda.<br>
+                        Silakan unggah berkas PDF Laporan Mandor dan KCS untuk memulai analisis.
+                    </p>
+                    <button class="btn-outline-green px-4" onclick="switchTab('upload')">
+                        Unggah Dokumen PDF
+                    </button>
+                </div>
+
+                <div id="dash-active-session-summary" class="card-sipeka d-none">
+                    <div class="card-header-custom">
+                        <h3>
+                            <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+                            </svg>
+                            <span>Sesi Pemeriksaan Aktif</span>
+                        </h3>
+                        <button class="btn-outline-green" onclick="switchTab('results')">
+                            Buka Hasil Terakhir
+                        </button>
+                    </div>
+                    <p class="text-secondary small mb-0">
+                        Pemeriksaan data telah berhasil dilakukan. Anda dapat memeriksa rincian baris di tab <strong>Hasil Pemeriksaan</strong> atau mengunduh rekapan dalam format Excel/PDF.
+                    </p>
+                </div>
+
+                <!-- Petunjuk Alur -->
+                <div class="row g-3 mt-1">
+                    <div class="col-md-4">
+                        <div class="card-sipeka h-100 p-3">
+                            <div class="step-number">1</div>
+                            <h4 class="h6 fw-bold mb-2 mt-2">Unggah Dua Berkas PDF</h4>
+                            <p class="small text-secondary mb-0">Pilih Laporan Mandor (PB24A) dan Laporan KCS (PB24B). Sistem memvalidasi integritas file secara lokal.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-sipeka h-100 p-3">
+                            <div class="step-number">2</div>
+                            <h4 class="h6 fw-bold mb-2 mt-2">Mesin Rekonsiliasi Otomatis</h4>
+                            <p class="small text-secondary mb-0">SIPEKA DF mencocokkan blok &amp; kode pekerja, mendeteksi selisih baris dan selisih saling meniadakan.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-sipeka h-100 p-3">
+                            <div class="step-number">3</div>
+                            <h4 class="h6 fw-bold mb-2 mt-2">Verifikasi &amp; Ekspor</h4>
+                            <p class="small text-secondary mb-0">Dapatkan tabel rincian selisih per baris, catatan verifikasi lapangan, dan ekspor langsung ke format CSV Excel.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================
+                 TAB 2: UPLOAD & PEMERIKSAAN
+                 ============================================================ -->
+            <section id="tab-upload" class="tab-section">
+                <div class="card-sipeka">
+                    <div class="card-header-custom">
+                        <h3>
+                            <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                            <span>Unggah Dua Berkas PDF Laporan Digital Farming</span>
+                        </h3>
+                        <span class="badge-info-sm">Format PDF (Maks. 30 MB)</span>
+                    </div>
+
+                    <p class="small text-secondary mb-4">
+                        Unggah laporan panen Mandor dan laporan pengangkutan KCS. Sistem akan membaca identitas tanggal, afdeling, dan mengekstrak tabel per blok dan pekerja.
+                    </p>
+
+                    <div class="upload-card-wrapper">
+                        <!-- Slot 1: Laporan Mandor -->
+                        <div class="upload-zone" id="dropzone-mandor">
+                            <input type="file" id="file-input-mandor" accept=".pdf" class="d-none">
+                            <div id="placeholder-mandor">
+                                <div class="upload-icon">
+                                    <svg class="si-icon xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="upload-title">1. Laporan Mandor (PB24A)</div>
+                                <div class="upload-subtitle">Form Pengumpulan Buah / Mandor Panen</div>
+                                <button type="button" class="btn-outline-green">Pilih Berkas PDF</button>
+                                <div class="small text-muted mt-2">atau tarik &amp; lepas file ke sini</div>
+                            </div>
+                            <div class="file-info-badge" id="badge-file-mandor">
+                                <div>
+                                    <div class="file-name-text" id="name-file-mandor">-</div>
+                                    <div class="file-size-text" id="size-file-mandor">-</div>
+                                </div>
+                                <button type="button" class="btn-remove-file" id="btn-remove-mandor" title="Hapus berkas" aria-label="Hapus Berkas">
+                                    <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Slot 2: Laporan KCS -->
+                        <div class="upload-zone" id="dropzone-kcs">
+                            <input type="file" id="file-input-kcs" accept=".pdf" class="d-none">
+                            <div id="placeholder-kcs">
+                                <div class="upload-icon">
+                                    <svg class="si-icon xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="16" height="13" x="1" y="6" rx="2"></rect>
+                                        <path d="M16 8h4l3 3v6h-7V8z"></path>
+                                        <circle cx="5.5" cy="19.5" r="2.5"></circle>
+                                        <circle cx="18.5" cy="19.5" r="2.5"></circle>
+                                    </svg>
+                                </div>
+                                <div class="upload-title">2. Laporan KCS (PB24B)</div>
+                                <div class="upload-subtitle">Form Pengangkutan Buah / Krani Cek Sawit</div>
+                                <button type="button" class="btn-outline-green">Pilih Berkas PDF</button>
+                                <div class="small text-muted mt-2">atau tarik &amp; lepas file ke sini</div>
+                            </div>
+                            <div class="file-info-badge" id="badge-file-kcs">
+                                <div>
+                                    <div class="file-name-text" id="name-file-kcs">-</div>
+                                    <div class="file-size-text" id="size-file-kcs">-</div>
+                                </div>
+                                <button type="button" class="btn-remove-file" id="btn-remove-kcs" title="Hapus berkas" aria-label="Hapus Berkas">
+                                    <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center py-3">
+                        <button id="btn-compare" class="btn-compare-action" disabled>
+                            <span id="compare-spinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                            <span id="compare-btn-text">Bandingkan Data</span>
+                        </button>
+                        <div class="small text-muted mt-2">Pemrosesan 100% lokal di mesin ini tanpa pengiriman data ke server eksternal.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================
+                 TAB 3: HASIL PEMERIKSAAN
+                 ============================================================ -->
+            <section id="tab-results" class="tab-section">
+                <!-- Metadata Banner -->
+                <div class="card-sipeka py-3 mb-3">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                        <div>
+                            <span class="badge-status badge-cocok me-2">Hasil Pemeriksaan Terakhir</span>
+                            <strong>Kebun:</strong> <span id="res-meta-kebun">-</span> &nbsp;|&nbsp;
+                            <strong>Afdeling:</strong> <span id="res-meta-afd">-</span> &nbsp;|&nbsp;
+                            <strong>Tanggal:</strong> <span id="res-meta-date">-</span>
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button class="btn-outline-green" id="btn-show-raw-preview">
+                                <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 12h20"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="M12 2v20"/>
+                                </svg>
+                                <span>Detail Ekstraksi PDF</span>
+                            </button>
+                            <button class="btn-outline-green" id="btn-export-csv">
+                                <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                <span>Ekspor Excel (CSV)</span>
+                            </button>
+                            <button class="btn-outline-default" id="btn-export-print">
+                                <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 6 2 18 2 18 9"/>
+                                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                                    <rect width="12" height="8" x="6" y="14"/>
+                                </svg>
+                                <span>Cetak / PDF</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="small text-muted mt-2">
+                        Berkas Mandor: <span id="res-meta-mandor-file" class="fw-semibold">-</span> |
+                        Berkas KCS: <span id="res-meta-kcs-file" class="fw-semibold">-</span>
+                    </div>
+                </div>
+
+                <!-- Alert Offsetting Differences -->
+                <div id="offset-difference-banner" class="alert-banner alert-danger-custom d-none">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <div>
+                        <strong class="d-block">PERHATIAN: Ditemukan Selisih Antar-Blok yang Saling Meniadakan (Offsetting Differences)!</strong>
+                        Total janjang keseluruhan Mandor dan KCS bernilai sama persis, namun terdapat ketidaksesuaian distribusi per blok. Harap periksa tabel di bawah secara seksama.
+                    </div>
+                </div>
+
+                <!-- Statistik Ringkasan -->
+                <div class="stats-grid-row">
+                    <div class="stat-box primary">
+                        <div class="stat-title">Total Baris</div>
+                        <div class="stat-value" id="res-stat-total-rows">0</div>
+                        <div class="stat-desc">Kombinasi blok &amp; pekerja</div>
+                    </div>
+                    <div class="stat-box success">
+                        <div class="stat-title">Data Cocok</div>
+                        <div class="stat-value stat-green" id="res-stat-cocok">0</div>
+                        <div class="stat-desc">Data identik</div>
+                    </div>
+                    <div class="stat-box danger">
+                        <div class="stat-title">Data Berbeda</div>
+                        <div class="stat-value stat-red" id="res-stat-berbeda">0</div>
+                        <div class="stat-desc">Perbedaan nilai buah</div>
+                    </div>
+                    <div class="stat-box warning">
+                        <div class="stat-title">Perlu Verifikasi</div>
+                        <div class="stat-value stat-orange" id="res-stat-verifikasi">0</div>
+                        <div class="stat-desc">Hilang, duplikat, tidak lengkap</div>
+                    </div>
+                    <div class="stat-box info">
+                        <div class="stat-title">Selisih Total (JJG)</div>
+                        <div class="stat-value" id="res-stat-selisih-total">0</div>
+                        <div class="stat-desc">KCS - Mandor</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-title">Blok Terdampak</div>
+                        <div class="stat-value" id="res-stat-affected-blocks">0</div>
+                        <div class="stat-desc">Blok memiliki selisih</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-title">Pekerja Terdampak</div>
+                        <div class="stat-value" id="res-stat-affected-workers">0</div>
+                        <div class="stat-desc">Kode pekerja berselisih</div>
+                    </div>
+                </div>
+
+                <!-- Rekapitulasi Per Blok -->
+                <div class="card-sipeka mb-3">
+                    <div class="card-header-custom mb-2">
+                        <h3>
+                            <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
+                            </svg>
+                            <span>Rekapitulasi Total Berdasarkan Blok</span>
+                        </h3>
+                        <small class="text-secondary">Distribusi produksi per blok untuk mendeteksi pergeseran data</small>
+                    </div>
+                    <div class="table-container">
+                        <div class="table-wrapper">
+                            <table class="table-custom">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" style="width:40px;">No</th>
+                                        <th>Nomor Blok</th>
+                                        <th class="text-end">Total Mandor (JJG)</th>
+                                        <th class="text-end">Total KCS (JJG)</th>
+                                        <th class="text-end">Selisih (KCS - Mandor)</th>
+                                        <th class="text-center">Status Blok</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-block-breakdown">
+                                    <tr><td colspan="6" class="text-center text-muted py-3">Belum ada pemeriksaan aktif</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atribut Tambahan -->
+                <div class="card-sipeka mb-3" id="card-additional-attributes">
+                    <div class="card-header-custom mb-2">
+                        <h3>
+                            <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                                <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                                <path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+                            </svg>
+                            <span>Rekonsiliasi Atribut Tambahan (Berondolan &amp; Luasan)</span>
+                        </h3>
+                        <small class="text-secondary">Dipisahkan dari produksi janjang buah agar perbandingan akurat</small>
+                    </div>
+                    <div class="table-container">
+                        <div class="table-wrapper">
+                            <table class="table-custom">
+                                <thead>
+                                    <tr>
+                                        <th>Atribut</th>
+                                        <th class="text-end">Laporan Mandor</th>
+                                        <th class="text-end">Laporan KCS</th>
+                                        <th class="text-end">Selisih</th>
+                                        <th class="text-center">Status</th>
+                                        <th>Keterangan</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-additional-attributes">
+                                    <tr><td colspan="6" class="text-center text-muted py-2">Tidak ada data atribut tambahan</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Utama Hasil -->
+                <div class="card-sipeka">
+                    <div class="card-header-custom">
+                        <h3>
+                            <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/>
+                                <line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/>
+                                <line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+                            </svg>
+                            <span>Detail Pemeriksaan Baris Mandor vs KCS</span>
+                        </h3>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="small text-secondary me-2">Menampilkan <span id="showing-rows-count" class="fw-bold">0</span> baris</span>
+                            <!-- Mobile View Switcher -->
+                            <div class="view-switcher-group d-md-none" id="view-switcher-group">
+                                <button type="button" class="view-btn active" id="btn-view-cards" title="Tampilan Kartu">
+                                    <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/>
+                                        <rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/>
+                                    </svg>
+                                    <span>Kartu</span>
+                                </button>
+                                <button type="button" class="view-btn" id="btn-view-table" title="Tampilan Tabel">
+                                    <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="18" x="3" y="3" rx="2"/>
+                                        <path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/>
+                                    </svg>
+                                    <span>Tabel</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter Bar -->
+                    <div class="table-filter-bar">
+                        <div class="search-input-box">
+                            <span class="icon">
+                                <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                                </svg>
+                            </span>
+                            <input type="text" id="search-input-results" placeholder="Cari Blok atau Kode Pekerja...">
+                        </div>
+                        <select id="filter-status-select" class="filter-select">
+                            <option value="ALL">Semua Status</option>
+                            <option value="VERIFIKASI">Semua Perlu Verifikasi</option>
+                            <option value="Cocok">Cocok Saja</option>
+                            <option value="Berbeda">Berbeda Saja</option>
+                            <option value="Hanya Ada di Mandor">Hanya di Mandor</option>
+                            <option value="Hanya Ada di KCS">Hanya di KCS</option>
+                            <option value="Data Tidak Lengkap">Data Tidak Lengkap</option>
+                            <option value="Duplikat">Duplikat</option>
+                        </select>
+                        <select id="filter-block-select" class="filter-select">
+                            <option value="ALL">Semua Blok</option>
+                        </select>
+                        <select id="sort-results-select" class="filter-select">
+                            <option value="DEFAULT">Urutan Default</option>
+                            <option value="DIFF_DESC">Selisih Terbesar (Mutlak)</option>
+                            <option value="BLOK_ASC">Nomor Blok (A - Z)</option>
+                        </select>
+                        <button id="btn-toggle-problems" class="btn-outline-default">
+                            Tampilkan Hanya Data Bermasalah
+                        </button>
+                    </div>
+
+                    <!-- Tabel Desktop -->
+                    <div class="table-container">
+                        <div class="table-scroll-hint">
+                            <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6"/>
+                            </svg>
+                            <span>Geser tabel ke samping untuk melihat kolom lengkap di perangkat mobile</span>
+                        </div>
+                        <div class="table-wrapper" id="table-results-wrapper">
+                            <table class="table-custom">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 40px;" class="text-center">No</th>
+                                        <th>Tanggal</th>
+                                        <th>Blok</th>
+                                        <th>Kode Pekerja</th>
+                                        <th class="text-end">Data Mandor (JJG)</th>
+                                        <th class="text-end">Data KCS (JJG)</th>
+                                        <th class="text-end">Selisih</th>
+                                        <th>Status</th>
+                                        <th>Keterangan / Rekomendasi Verifikasi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-comparison-results">
+                                    <tr>
+                                        <td colspan="9" class="text-center text-muted py-5">
+                                            Silakan unggah dan bandingkan file PDF di tab <strong>Pemeriksaan Data</strong>.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Mode Kartu Mobile -->
+                        <div class="table-cards-container" id="table-cards-container">
+                            <div class="text-center text-muted py-4">
+                                Silakan unggah dan bandingkan file PDF di tab <strong>Pemeriksaan Data</strong>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 p-3 info-box small text-secondary">
+                        <strong>Petunjuk Asisten Afdeling:</strong> Klik pada baris atau kartu mana saja untuk melihat rincian kalkulasi, perbandingan data sumber, dan rekomendasi langkah verifikasi lapangan.
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================
+                 TAB 4: RIWAYAT
+                 ============================================================ -->
+            <section id="tab-history" class="tab-section">
+                <div class="card-sipeka">
+                    <div class="card-header-custom">
+                        <h3>
+                            <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            <span>Riwayat Pemeriksaan Data</span>
+                        </h3>
+                        <button id="btn-clear-all-history" class="btn-outline-danger">
+                            <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
+                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+                            </svg>
+                            <span>Hapus Seluruh Riwayat</span>
+                        </button>
+                    </div>
+                    <p class="small text-secondary mb-3">
+                        Daftar riwayat perbandingan yang disimpan secara lokal di mesin ini. Anda dapat membuka kembali rekaman pemeriksaan terdahulu.
+                    </p>
+                    <div class="table-container">
+                        <div class="table-wrapper">
+                            <table class="table-custom">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" style="width: 40px;">No</th>
+                                        <th>Waktu Pemeriksaan</th>
+                                        <th>Berkas yang Dibandingkan</th>
+                                        <th>Tanggal Panen</th>
+                                        <th>Afdeling</th>
+                                        <th class="text-center">Cocok</th>
+                                        <th class="text-center">Berbeda</th>
+                                        <th class="text-end">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-history-list">
+                                    <tr><td colspan="8" class="text-center text-muted py-4">Memuat riwayat...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================
+                 TAB 5: PANDUAN PENGGUNAAN
+                 ============================================================ -->
+            <section id="tab-guide" class="tab-section">
+                <div class="card-sipeka">
+                    <h2 class="h5 fw-bold mb-2">Panduan Penggunaan SIPEKA DF</h2>
+                    <p class="text-secondary small mb-4">
+                        Pedoman operasional bagi Asisten Afdeling, Krani Cek Sawit, dan Mandor Panen untuk memverifikasi kesesuaian data Digital Farming di perkebunan kelapa sawit.
+                    </p>
+                    <div class="accordion" id="guideAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#guide1">
+                                    1. Persiapan Berkas PDF Laporan
+                                </button>
+                            </h2>
+                            <div id="guide1" class="accordion-collapse collapse show" data-bs-parent="#guideAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mb-0 ps-3">
+                                        <li>Pastikan Anda mengunduh dokumen laporan resmi dari sistem Digital Farming.</li>
+                                        <li><strong>Laporan Mandor (PB24A):</strong> Formulir rekapitulasi hasil pengumpulan buah per pemanen di setiap blok.</li>
+                                        <li><strong>Laporan KCS (PB24B):</strong> Formulir pengangkutan buah dari TPH ke Pabrik Kelapa Sawit (PKS).</li>
+                                        <li>Format harus berupa PDF digital resmi (bukan foto kamera atau hasil pindai buram).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#guide2">
+                                    2. Cara Melakukan Pemeriksaan
+                                </button>
+                            </h2>
+                            <div id="guide2" class="accordion-collapse collapse" data-bs-parent="#guideAccordion">
+                                <div class="accordion-body">
+                                    <ol class="mb-0 ps-3">
+                                        <li>Masuk ke menu <strong>Pemeriksaan Data</strong>.</li>
+                                        <li>Pilih file Laporan Mandor (PB24A) pada slot pertama.</li>
+                                        <li>Pilih file Laporan KCS (PB24B) pada slot kedua.</li>
+                                        <li>Tekan tombol hijau <strong>Bandingkan Data</strong>.</li>
+                                        <li>Hasil perbandingan langsung disajikan secara terperinci per baris dan per blok.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#guide3">
+                                    3. Memahami Status Hasil Pemeriksaan
+                                </button>
+                            </h2>
+                            <div id="guide3" class="accordion-collapse collapse" data-bs-parent="#guideAccordion">
+                                <div class="accordion-body">
+                                    <ul class="mb-0 ps-3">
+                                        <li><strong class="text-success">Cocok:</strong> Angka jumlah janjang Mandor dan KCS persis sama (Selisih = 0).</li>
+                                        <li><strong class="text-danger">Berbeda:</strong> Terdapat selisih angka antara laporan Mandor dan KCS.</li>
+                                        <li><strong class="text-warning">Hanya Ada di Mandor:</strong> Buah dicatat dipanen namun belum dicatat diangkut oleh KCS (kemungkinan restan TPH).</li>
+                                        <li><strong class="text-warning">Hanya Ada di KCS:</strong> KCS mencatat pemuatan tetapi Mandor tidak mencatat pemanen terkait.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#guide4">
+                                    4. Memahami Selisih yang Saling Meniadakan (Offsetting Differences)
+                                </button>
+                            </h2>
+                            <div id="guide4" class="accordion-collapse collapse" data-bs-parent="#guideAccordion">
+                                <div class="accordion-body">
+                                    <p>Total janjang yang sama tidak menjamin data sudah benar! Sebagai contoh:</p>
+                                    <ul class="ps-3 mb-2">
+                                        <li>Blok 136: Mandor = 72, KCS = 75 (Selisih: +3)</li>
+                                        <li>Blok 137: Mandor = 80, KCS = 77 (Selisih: -3)</li>
+                                        <li><strong>Total Keseluruhan:</strong> Mandor = 152, KCS = 152 (Selisih Total = 0).</li>
+                                    </ul>
+                                    <p class="mb-0">Meskipun total akhir sama, distribusi per blok salah. SIPEKA DF secara otomatis memunculkan peringatan merah jika kondisi ini terdeteksi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#guide5">
+                                    5. Ekspor dan Verifikasi Lapangan
+                                </button>
+                            </h2>
+                            <div id="guide5" class="accordion-collapse collapse" data-bs-parent="#guideAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0">Gunakan tombol <strong>Ekspor Excel (CSV)</strong> untuk membagikan temuan selisih kepada Mandor dan Krani guna kroscek fisik di TPH (Tempat Pengumpulan Hasil).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================
+                 TAB 6: TENTANG APLIKASI
+                 ============================================================ -->
+            <section id="tab-about" class="tab-section">
+                <div class="card-sipeka">
+                    <h2 class="h5 fw-bold mb-2">Tentang SIPEKA DF</h2>
+                    <p class="text-secondary small mb-4">Sistem Pemeriksa Kesalahan Data Digital Farming — Versi 1.0.0</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="h6 fw-bold">Tujuan Aplikasi</h3>
+                            <p class="small text-secondary">
+                                Mengotomatisasi proses rekonsiliasi laporan operasional panen kelapa sawit antara Mandor Panen (PB24A) dan Krani Cek Sawit / Krani Transport (PB24B). Menghilangkan pemeriksaan manual berbasis kertas yang memakan waktu lama dan rentan luput.
+                            </p>
+                            <h3 class="h6 fw-bold mt-4">Arsitektur &amp; Keamanan</h3>
+                            <ul class="small text-secondary ps-3 mb-0">
+                                <li><strong>100% Pemrosesan Lokal:</strong> Tidak ada ketergantungan koneksi internet dan tidak ada data yang dikirim ke cloud luar.</li>
+                                <li><strong>Privasi Data:</strong> File PDF temporer dibersihkan secara otomatis setelah ekstraksi selesai.</li>
+                                <li><strong>Standar Excel:</strong> Ekspor CSV menyertakan UTF-8 BOM agar angka dan teks terbuka rapi di Microsoft Excel.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="info-box">
+                                <h3 class="h6 fw-bold mb-3">Informasi Sistem</h3>
+                                <table class="table table-sm table-borderless small mb-0 text-secondary">
+                                    <tr><td style="width:160px;">Platform UI:</td><td><strong>HTML5 / PHP (Apache XAMPP)</strong></td></tr>
+                                    <tr><td>Backend Logika:</td><td><strong>Python 3 (app.py — Port 8080)</strong></td></tr>
+                                    <tr><td>Ekstraktor PDF:</td><td><strong>PyMuPDF Engine (v1.28)</strong></td></tr>
+                                    <tr><td>Penyimpanan:</td><td><strong>Lokal JSON (data/history.json)</strong></td></tr>
+                                    <tr><td>Desain:</td><td><strong>Responsive Mobile, White Clean Theme</strong></td></tr>
+                                    <tr><td>Status Server Python:</td><td><strong class="<?= $python_online ? 'text-success' : 'text-danger' ?>"><?= $python_status_msg ?></strong></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- /app-content -->
+    </main>
+</div><!-- /app-container -->
+
+<!-- ====================================================================
+     MODALS
+     ==================================================================== -->
+
+<!-- Modal Detail Verifikasi Baris -->
+<div class="modal fade" id="modalRowDetail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h6">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    <span>Detail Verifikasi Ketidaksesuaian Data</span>
+                </h5>
+                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Tutup">
+                    <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body small">
+                <div class="row g-2 mb-3">
+                    <div class="col-4 text-secondary">Nomor Blok:</div>
+                    <div class="col-8 fw-bold" id="modal-detail-blok">-</div>
+                    <div class="col-4 text-secondary">Kode Pekerja:</div>
+                    <div class="col-8 fw-bold" id="modal-detail-pekerja">-</div>
+                    <div class="col-4 text-secondary">Tanggal:</div>
+                    <div class="col-8" id="modal-detail-tanggal">-</div>
+                </div>
+                <div class="detail-box mb-3">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="text-muted small">Laporan Mandor (PB24A)</div>
+                            <div class="fs-6 fw-bold" id="modal-detail-mandor">-</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-muted small">Laporan KCS (PB24B)</div>
+                            <div class="fs-6 fw-bold" id="modal-detail-kcs">-</div>
+                        </div>
+                    </div>
+                    <hr class="my-2">
+                    <div class="d-flex justify-content-between">
+                        <span class="text-secondary">Selisih (KCS - Mandor):</span>
+                        <strong class="fs-6" id="modal-detail-selisih">-</strong>
+                    </div>
+                    <div class="d-flex justify-content-between mt-1">
+                        <span class="text-secondary">Status Pemeriksaan:</span>
+                        <span class="badge-status badge-incomplet" id="modal-detail-status">-</span>
+                    </div>
+                </div>
+                <div>
+                    <strong class="d-block mb-1">Alasan &amp; Rekomendasi Verifikasi:</strong>
+                    <p class="text-secondary mb-0" id="modal-detail-alasan">-</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-outline-default" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Peringatan Validasi Identitas -->
+<div class="modal fade" id="modalValidationWarning" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h6 text-warning">
+                    <svg class="si-icon text-warning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <span>Peringatan Ketidaksesuaian Identitas Dokumen</span>
+                </h5>
+                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Tutup">
+                    <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body small">
+                <p>Sistem mendeteksi adanya ketidaksesuaian identitas antara kedua file yang Anda unggah:</p>
+                <ul class="text-danger ps-3 mb-3" id="validation-warnings-list"></ul>
+                <p class="text-secondary mb-0">Perbandingan data tetap dilakukan, namun pastikan perbedaan ini bukan karena salah memilih berkas tanggal atau afdeling yang berbeda.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-primary-green" data-bs-dismiss="modal">Saya Mengerti &amp; Lanjutkan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Detail Ekstraksi Data Mentah -->
+<div class="modal fade" id="modalRawExtraction" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h6">
+                    <svg class="si-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12h20"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="M12 2v20"/>
+                    </svg>
+                    <span>Detail Ekstraksi Data Mentah Dokumen PDF (Inspektor)</span>
+                </h5>
+                <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Tutup">
+                    <svg class="si-icon sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body small">
+                <p class="text-secondary mb-3">Fitur inspeksi struktur tabel PDF sumber untuk memastikan pemetaan kolom terekstrak secara presisi.</p>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="detail-box">
+                            <h6 class="fw-bold text-success mb-2">Laporan Mandor (PB24A)</h6>
+                            <table class="table table-sm table-borderless mb-2 text-secondary">
+                                <tr><td style="width:160px;">Format Terdeteksi:</td><td><strong id="raw-mandor-format">-</strong></td></tr>
+                                <tr><td>Baris Transaksi:</td><td><strong id="raw-mandor-rows">-</strong></td></tr>
+                                <tr><td>Total Janjang:</td><td><strong id="raw-mandor-total">-</strong></td></tr>
+                                <tr><td>Grand Total Tertera:</td><td><strong id="raw-mandor-gt">-</strong></td></tr>
+                            </table>
+                            <h6 class="fw-bold mb-1">Pratinjau Tabel Sumber Mentah:</h6>
+                            <div class="table-container" style="max-height: 250px; overflow-y:auto;">
+                                <table class="table-custom font-monospace mb-0" style="font-size: 10px;" id="raw-mandor-table"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail-box">
+                            <h6 class="fw-bold text-success mb-2">Laporan KCS (PB24B)</h6>
+                            <table class="table table-sm table-borderless mb-2 text-secondary">
+                                <tr><td style="width:160px;">Format Terdeteksi:</td><td><strong id="raw-kcs-format">-</strong></td></tr>
+                                <tr><td>Baris Transaksi:</td><td><strong id="raw-kcs-rows">-</strong></td></tr>
+                                <tr><td>Total Janjang:</td><td><strong id="raw-kcs-total">-</strong></td></tr>
+                                <tr><td>Grand Total Tertera:</td><td><strong id="raw-kcs-gt">-</strong></td></tr>
+                            </table>
+                            <h6 class="fw-bold mb-1">Pratinjau Tabel Sumber Mentah:</h6>
+                            <div class="table-container" style="max-height: 250px; overflow-y:auto;">
+                                <table class="table-custom font-monospace mb-0" style="font-size: 10px;" id="raw-kcs-table"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-outline-default" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap 5 JS Bundle Offline -->
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+<!-- Chart.js Offline -->
+<script src="/static/js/chart.min.js"></script>
+<!-- SIPEKA DF Frontend Controller -->
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>
